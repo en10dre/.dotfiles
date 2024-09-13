@@ -14,11 +14,11 @@ after that a terminal will open follow the instructions.
 Once your done setting up Ubuntu run `sudo apt update && sudo apt upgrade -y`
 to the command line this will update and upgrade Ubuntu to the latest version.
 > [!NOTE]
-> running the command will not update Ubuntu itself to it's latest version but
+running the command will not update Ubuntu itself to it's latest version but
 the files that Ubuntu uses. A good example to understand this would be windows
 updates for Windows 10 are different from the windows updates for Windows 11.
 
-## (Optional) Upgrade to latest version of Ubuntu
+### (Optional) Upgrade to latest version of Ubuntu
 To check the version of Ubuntu you are using run the command
 `cat etc/os-release`. You can also use neofetch but first you'll have install
 it first using the command `sudo apt install neofetch`, after installing type
