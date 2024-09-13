@@ -1,0 +1,26 @@
+[user]
+	name = sketchycommits
+	email = 149786490+sketchycommits@users.noreply.github.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    pl = pull
+    ps = push
+	lg1 = log --oneline
+    lg2 = log --oneline --graph --all
+    last = log -1 HEAD
+    amend = commit --amend
+    undo = reset --soft HEAD^
+    status = status -s
+    df = diff
+    type = cat-file -t
+    dump = cat-file -p
+    rc = rebase --continue

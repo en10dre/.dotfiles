@@ -1,0 +1,59 @@
+# Vim/Neovim swap files
+*.swp
+*.swo
+lazy-lock.json
+
+# VS Code
+.vscode/
+.vscode/settings.json
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains IDEs
+.idea/
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+env/
+venv/
+
+# Rust
+target/
+
+# Go
+vendor/
+
+# Compiled object files, binaries, libraries (C/C++)
+*.o
+*.out
+*.so
+*.exe
+
+# Rust binary files
+/target/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# Environment files
+.env
+.env.local
+
+# Node.js
+package-lock.json
+
+# Python
+Pipfile.lock
+
