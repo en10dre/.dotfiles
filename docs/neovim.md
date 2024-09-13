@@ -14,7 +14,7 @@ nvim --version
 ```
 
 ## Quickstart
-Create a configuration directory by typing this command
+Create a configuration directory and stow files by typing this command
 ```
 mkdir -p ~/.config/nvim
 cd ~/.dotfiles/nvim
