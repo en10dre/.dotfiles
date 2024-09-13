@@ -184,7 +184,16 @@ return {
                             if not success then
                                 log_error("Failed to configure cssls: " .. err)
                             end
-                        end
+                        end,
+
+                        marksman = function()
+                            local success, err = pcall(function()
+                                require('lspconfig').marksman.setup({})
+                            end)
+                            if not success then
+                                log_error("Failed to configure marksman: " .. err)
+                            end
+                        end,
                     },
                 })
             end)
@@ -204,6 +213,7 @@ return {
                     { name = 'vsnip' },
                     { name = 'path' },
                     { namee = 'buffer' },
+                    { name = 'marksman' },
                 },
                 snippet = {
                     expand = function(args)
