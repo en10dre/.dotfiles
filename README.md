@@ -20,7 +20,7 @@ updates for Windows 10 are different from the windows updates for Windows 11.
 
 ## (Optional) Upgrade to latest version of Ubuntu
 To check the version of Ubuntu you are using run the command
-`cat etc/os-release`. You can also use "neofetch" but first you'll have install
+`cat etc/os-release`. You can also use neofetch but first you'll have install
 it first using the command `sudo apt install neofetch`, after installing type
 the `neofetch` command in the terminal.
 
