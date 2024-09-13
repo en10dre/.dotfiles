@@ -13,7 +13,7 @@ after that a terminal will open follow the instructions.
 
 Once your done setting up Ubuntu run `sudo apt update && sudo apt upgrade -y`
 to the command line this will update and upgrade Ubuntu to the latest version.
-> [!note] Ubuntu update files
+> [!NOTE]
 > running the command will not update Ubuntu itself to it's latest version but
 the files that Ubuntu uses. A good example to understand this would be windows
 updates for Windows 10 are different from the windows updates for Windows 11.
