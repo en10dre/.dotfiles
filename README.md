@@ -30,3 +30,9 @@ are available upgrades or not, if there is a prompt telling you to upgrade just
 type "yes" and check for prompts while in the installation process, right after
 the installation is finished restart Ubuntu and check if the installation was a
 success.
+
+## Requirements
+- stow
+- fzf
+- ripgrep
+- node
