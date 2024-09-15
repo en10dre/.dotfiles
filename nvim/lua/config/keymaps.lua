@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("i", "<C-[", "<Esc>")
 
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", vim.cmd.Ex, { desc = "Open parent directory" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
