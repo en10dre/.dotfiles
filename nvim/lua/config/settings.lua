@@ -34,3 +34,14 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.opt.autoread = true
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" }) -- Set your preferred background color
+
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "#282c34" })       -- For popup menu
+vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#4b5263" })    -- For selected item in popup menu
+vim.api.nvim_set_hl(0, "PmenuSbar", { bg = "#3e4452" })   -- For scrollbar
+vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#626a73" })  -- For scrollbar thumb
+
+vim.api.nvim_set_hl(0, "LspFloatWinNormal", { bg = "#1e222a" })
+vim.api.nvim_set_hl(0, "LspFloatWinBorder", { bg = "#1e222a" })

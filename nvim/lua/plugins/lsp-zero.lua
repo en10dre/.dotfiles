@@ -35,6 +35,7 @@ return {
                 servers = {
                     ['lua_ls'] = { 'lua' },
                     ['html'] = { 'html' },
+                    ['ts_ls'] = { 'json', 'javascript', 'typescript' }
                 }
             })
 
@@ -81,7 +82,7 @@ return {
                     marksman = function()
                         require('lspconfig').marksman.setup({
                         })
-                    end
+                    end,
                 }
             })
 
@@ -95,6 +96,7 @@ return {
                     { name = 'nvim_lsp' },
                     { name = 'vsnip' },
                     { name = 'path' },
+                    { name = 'biome' },
                 },
                 snippet = {
                     expand = function(args)
