@@ -31,8 +31,9 @@ type "yes" and check for prompts while in the installation process, right after
 the installation is finished restart Ubuntu and check if the installation was a
 success.
 
-## Requirements
+## Requirement:
 - stow
 - fzf
 - ripgrep
 - node
+- tmux
