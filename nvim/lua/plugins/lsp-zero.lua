@@ -34,8 +34,6 @@ return {
                 },
                 servers = {
                     ['lua_ls'] = { 'lua' },
-                    ['html'] = { 'html' },
-                    ['ts_ls'] = { 'json', 'javascript', 'typescript' },
                     ['jdtls'] = { 'java' },
                 }
             })

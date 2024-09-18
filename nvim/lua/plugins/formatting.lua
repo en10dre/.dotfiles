@@ -6,6 +6,11 @@ return {
             require("conform").setup({
                 formatters_by_ft = {
                     markdown = { "prettier" },
+                    javascript = { "prettier" },
+                    typescript = { "prettier" },
+                    json = { "prettier" },
+                    html = { "prettier" },
+                    css = { "prettier" },
                 },
                 format_on_save = function(bufnr)
                     -- Disable with a global or buffer-local variable
