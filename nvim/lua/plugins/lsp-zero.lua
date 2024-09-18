@@ -99,6 +99,10 @@ return {
                         require('lspconfig').jdtls.setup({
                         })
                     end,
+                    kotlin_language_server = function()
+                        require('lspconfig').kotlin_language_server.setup({
+                        })
+                    end,
                 }
             })
 
