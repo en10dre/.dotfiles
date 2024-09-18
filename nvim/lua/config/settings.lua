@@ -45,3 +45,5 @@ vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#626a73" })  -- For scrollbar thumb
 
 vim.api.nvim_set_hl(0, "LspFloatWinNormal", { bg = "#1e222a" })
 vim.api.nvim_set_hl(0, "LspFloatWinBorder", { bg = "#1e222a" })
+
+vim.opt.textwidth = 80
