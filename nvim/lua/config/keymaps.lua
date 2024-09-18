@@ -35,7 +35,7 @@ vim.keymap.set(
     "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
 )
 
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/dotfiles/.config/nvim/lua/lazy.lua<CR>");
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/lua/config/lazy.lua<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
