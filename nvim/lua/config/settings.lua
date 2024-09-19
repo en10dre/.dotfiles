@@ -31,7 +31,8 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
+vim.opt.textwidth = 80
 
 vim.opt.autoread = true
 
@@ -45,5 +46,3 @@ vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#626a73" })  -- For scrollbar thumb
 
 vim.api.nvim_set_hl(0, "LspFloatWinNormal", { bg = "#1e222a" })
 vim.api.nvim_set_hl(0, "LspFloatWinBorder", { bg = "#1e222a" })
-
-vim.opt.textwidth = 80
