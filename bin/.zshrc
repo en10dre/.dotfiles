@@ -112,3 +112,5 @@ export NVM_DIR="$HOME/.nvm"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export SRC_ENDPOINT=https://sourcegraph.com/
+export SRC_ACCESS_TOKEN=sgp_fd1b4edb60bf82b8_b28c4d935f2bb065d4512bc12db43f3476c33e97
