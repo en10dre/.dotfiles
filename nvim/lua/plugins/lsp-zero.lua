@@ -17,6 +17,7 @@ return {
             local lsp_zero = require('lsp-zero')
             local cmp = require('cmp')
             local cmp_action = lsp_zero.cmp_action()
+
             --Enable (broadcasting) snippet capability for completion
             local capabilities = vim.lsp.protocol.make_client_capabilities()
             capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -35,6 +36,7 @@ return {
                 servers = {
                     ['lua_ls'] = { 'lua' },
                     ['jdtls'] = { 'java' },
+                    ['xml'] = { 'xml' },
                 }
             })
 
@@ -74,18 +76,28 @@ return {
             -- Mason setup
             require('mason').setup({})
             require('mason-lspconfig').setup({
-                ensure_installed = { 'lua_ls' },
+                ensure_installed = { 'lua_ls', 'jdtls', 'marksman',
+                    'emmet_language_server',
+                    'kotlin_language_server' },
                 handlers = {
                     -- Default handler for LSP servers
                     function(server_name)
                         require('lspconfig')[server_name].setup({})
                     end,
                     -- Custom configuration for specific LSP servers
+                    lemminx = function()
+                        require('lspconfig').lemminx.setup({})
+                    end,
                     lua_ls = function()
                         require('lspconfig').lua_ls.setup({})
                     end,
                     html = function()
                         require('lspconfig').html.setup({
+                            capabilities = capabilities,
+                        })
+                    end,
+                    cssls = function()
+                        require('lspconfig').cssls.setup({
                             capabilities = capabilities,
                         })
                     end,
@@ -113,6 +125,7 @@ return {
                 sources = {
                     { name = 'nvim_lsp' },
                     { name = 'vsnip' },
+                    { name = 'cody' },
                     { name = 'path' },
                 },
                 snippet = {

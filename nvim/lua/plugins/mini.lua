@@ -5,7 +5,7 @@ return {
         config = function()
             require('mini.icons').setup()
             -- require('mini.statusline').setup()
-            require('mini.diff').setup()
+            -- require('mini.diff').setup()
         end,
     },
 }

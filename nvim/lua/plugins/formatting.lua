@@ -11,6 +11,7 @@ return {
                     json = { "prettier" },
                     html = { "prettier" },
                     css = { "prettier" },
+
                 },
                 format_on_save = function(bufnr)
                     -- Disable with a global or buffer-local variable
