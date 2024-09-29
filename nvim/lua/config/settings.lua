@@ -31,12 +31,22 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
-vim.opt.textwidth = 80
+-- vim.opt.colorcolumn = "80"
 
 vim.opt.autoread = true
 
-vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
--- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" }) -- Set your preferred background color
+-- Set textwidth for programming languages
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "c", "cpp", "java", "python", "lua", "javascript", "typescript", "rust", "vim" },
+    callback = function()
+        vim.opt_local.textwidth = 80
+    end,
+})
 
-vim.opt.conceallevel = 2
+-- Set textwidth for Markdown
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.textwidth = 72
+    end,
+})

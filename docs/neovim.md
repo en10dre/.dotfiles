@@ -1,7 +1,8 @@
 # Installation
+
 ```
 sudo apt update
-sudo apt install -y ninja-build gettext libtool autoconf automake cmake g++ 
+sudo apt install -y ninja-build gettext libtool autoconf automake cmake g++
 pkg-config unzip curl
 
 git clone git@github.com:neovim/neovim.git
@@ -14,12 +15,15 @@ nvim --version
 ```
 
 ## Quickstart
+
 Create a configuration directory and stow files by typing this command
+
 ```
 mkdir -p ~/.config/nvim
 cd ~/.dotfiles/nvim
-stow nvim --target=$HOME/.config/nvim
+stow nvim --target=$HOME/.config/
 ```
 
 ## Usage
+
 type `nvim` or `nvim .` in the command line.

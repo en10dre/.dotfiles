@@ -85,6 +85,9 @@ return {
                         require('lspconfig')[server_name].setup({})
                     end,
                     -- Custom configuration for specific LSP servers
+                    clangd = function()
+                        require 'lspconfig'.clangd.setup {}
+                    end,
                     lemminx = function()
                         require('lspconfig').lemminx.setup({})
                     end,

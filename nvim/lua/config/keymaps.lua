@@ -1,12 +1,13 @@
 vim.g.mapleader = " "
-vim.keymap.set("i", "<C-[", "<Esc>")
+vim.keymap.set("i", "<C-[>", "<Esc>")
 
-vim.keymap.set("n", "-", vim.cmd.Ex, { desc = "Open parent directory" })
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open parent directory" })
+-- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set("n", "<leader>tw", "gggqG")
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move highlighted text down" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move highlighted text up" })
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
