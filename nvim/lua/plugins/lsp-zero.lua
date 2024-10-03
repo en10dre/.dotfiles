@@ -128,7 +128,7 @@ return {
                 sources = {
                     { name = 'nvim_lsp' },
                     { name = 'vsnip' },
-                    { name = 'cody' },
+                    -- { name = 'cody' },
                     { name = 'path' },
                 },
                 snippet = {

@@ -37,7 +37,7 @@ vim.opt.autoread = true
 
 -- Set textwidth for programming languages
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "c", "cpp", "java", "python", "lua", "javascript", "typescript", "rust", "vim" },
+    pattern = { "c", "cpp", "java", "python", "lua", "javascript", "typescript", "rust", "vim", "html" },
     callback = function()
         vim.opt_local.textwidth = 80
     end,
@@ -50,3 +50,5 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.textwidth = 72
     end,
 })
+
+vim.opt.conceallevel = 2
