@@ -8,6 +8,18 @@ end
 
 return {
     {
+        "ilof2/posterpole.nvim",
+        priority = 1000,
+        config = function()
+            require("posterpole").setup({
+                -- config here
+                transparent = true,
+                colorless_bg = false,
+            })
+            vim.cmd("colorscheme posterpole")
+        end
+    },
+    {
         "rebelot/kanagawa.nvim",
         config = function()
             require("kanagawa").setup({
@@ -44,13 +56,21 @@ return {
         'Mofiqul/dracula.nvim',
         config = function()
             require("dracula").setup({
-                transparent_bg = true,
             })
             -- vim.cmd [[colorscheme dracula]]
         end
     },
     {
-        "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000,
+        config = function()
+            require("catppuccin").setup({
+                transparent_background = true,
+            })
+            -- vim.cmd.colorscheme "catppuccin"
+        end
+    },
     {
         "ellisonleao/gruvbox.nvim",
     },
@@ -77,7 +97,7 @@ return {
                     italic = false,
                 },
             })
-            vim.cmd("colorscheme rose-pine");
+            -- vim.cmd("colorscheme rose-pine");
         end
     },
     {
@@ -100,7 +120,7 @@ return {
                     floats = "dark",
                 },
             })
-            -- vim.cmd("colorscheme tokyonight") -- Set tokyonight as default
+            -- vim.cmd("colorscheme tokyonight-storm") -- Set tokyonight as default
         end
     }
 }

@@ -5,6 +5,7 @@ return {
         lazy = true,                            -- Marks this plugin for lazy loading
         event = { "BufReadPre", "BufNewFile" }, -- Specifies when the plugin should load
         dependencies = {
+            'onsails/lspkind.nvim',
             'neovim/nvim-lspconfig',
             'hrsh7th/cmp-nvim-lsp',
             'hrsh7th/nvim-cmp',
@@ -121,6 +122,14 @@ return {
 
             -- Autocompletion setup
             cmp.setup({
+                formatting = {
+                    fields = { 'abbr', 'kind', 'menu' },
+                    format = require('lspkind').cmp_format({
+                        mode = 'symbol_text',
+                        maxwidth = 50,         -- prevent the popup from showing more than provided characters
+                        ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead
+                    })
+                },
                 preselect = 'item',
                 completion = {
                     completeopt = 'menu,menuone,noinsert'
@@ -143,6 +152,7 @@ return {
                         { name = "buffer" },
                     },
                 }),
+
                 mapping = cmp.mapping.preset.insert({
                     ['<Tab>'] = cmp_action.tab_complete(),
                     ['<S-Tab>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),

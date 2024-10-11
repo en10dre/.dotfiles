@@ -1,7 +1,5 @@
 vim.opt.guicursor = ""
 
--- vim.opt.cursorline = true
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -31,24 +29,8 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
--- vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80"
 
 vim.opt.autoread = true
-
--- Set textwidth for programming languages
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "c", "cpp", "java", "python", "lua", "javascript", "typescript", "rust", "vim", "html" },
-    callback = function()
-        vim.opt_local.textwidth = 80
-    end,
-})
-
--- Set textwidth for Markdown
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "markdown",
-    callback = function()
-        vim.opt_local.textwidth = 72
-    end,
-})
 
 vim.opt.conceallevel = 2
