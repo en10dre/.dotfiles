@@ -92,5 +92,8 @@ return {
                 insert_tag = "<C-l>",
             },
         },
+        ui = {
+            enable = false,
+        },
     },
 }
